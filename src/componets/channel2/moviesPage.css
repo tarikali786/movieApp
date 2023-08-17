@@ -1,0 +1,82 @@
+.moviePageConatiner {
+  padding: 14px;
+}
+.search_Movie {
+  text-align: center;
+  width: 100%;
+}
+.search_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.search_input {
+  padding: 0.36rem 0.5rem;
+  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
+  transition: border-color 10s;
+  font-size: 18px;
+  width: 85%;
+}
+.search_button {
+  background-color: #e70c0c;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  padding: 0.55rem 0.6rem;
+  cursor: pointer;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-search {
+  font-size: 16px;
+}
+.search_input:focus {
+  border: none;
+}
+
+.movies_details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 1rem;
+  padding: 0 5%;
+}
+@media (min-width: 400px) {
+  .movies_details {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 750px) {
+  .movies_details {
+    padding: 0 20%;
+  }
+}
+.img_section {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+  border: 1px solid rgb(0, 0, 0);
+}
+.img_section > img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px 2px rgb(82, 81, 81);
+  /* filter: contrast(2); */
+}
+.movie___details {
+  margin: 1.4rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.listing_card {
+  line-height: 1.5;
+}
+.plot_ls {
+  font-size: 16px;
+}

@@ -1,0 +1,347 @@
+.movie {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie__intro {
+  width: 80%;
+}
+.movie__intro2 {
+  width: 100%;
+}
+.movie__backdrop {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0 35%;
+}
+.movie__backdrop2 {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: 0 35%;
+}
+
+.movie__posterBox2 {
+  position: absolute;
+  left: 1rem;
+  top: 8rem;
+  border: 1px solid rgb(179, 13, 13);
+}
+.movie__posterr {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.movie__detail {
+  align-items: center;
+  width: 75%;
+  display: flex;
+  position: relative;
+  bottom: 225px;
+}
+
+.movie__detaill {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 116px;
+}
+
+.movie__detailLeftt {
+  margin-right: 30px;
+}
+.movie__posterr {
+  width: 130px;
+  height: 180px;
+  border-radius: 10px;
+  margin-left: 16px;
+
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+@media (max-width: 290px) {
+  .movie__posterr {
+    width: 100px;
+    height: 160px;
+    margin-left: 10px;
+  }
+}
+.movie__detailLeft {
+  margin-right: 30px;
+}
+
+.movie__poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+
+.movie__detailRightTop > div {
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 0.5rem;
+}
+
+.movie__name {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.movie__voteCount {
+  margin-left: 1rem;
+}
+
+.movie__genres {
+  margin: 2rem 0 0 0;
+}
+
+.movie__genre {
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  /* z-index: 1; */
+  animation: changeBackgroundColor 3s infinite;
+  background: linear-gradient(to right, #85cfe8, #ea9fe3, #eaabab);
+}
+
+.movie__detailRightBottom {
+  margin: 0rem 0;
+  flex: 0.8;
+}
+@media (max-width: 768px) {
+  .movie__detailRight {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0rem;
+    padding: 0.6rem 6px;
+    z-index: 1000;
+  }
+  .movie__detailRightTop > div {
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: 0.5rem;
+  }
+  .movie__name {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .movie__runtime {
+    font-size: 0.9rem;
+  }
+  .movie__genres {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .movie__genre {
+    padding: 0.4rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0 0.6rem 0.6rem 0;
+  }
+  .movie__detailRightBottom {
+    margin: 0rem 0;
+    flex: 0.8;
+  }
+  .synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+}
+@keyframes changeBackgroundColor {
+  0% {
+    background: linear-gradient(to bottom right, #bfe8f6, #fec5fa, #f6c2c2);
+  }
+  25% {
+    background: linear-gradient(
+      to bottom right,
+      rgb(182, 230, 246),
+      #f7bff2,
+      #f7c2c2
+    );
+  }
+  50% {
+    background: linear-gradient(to bottom right, #b8e7f6, #f5a7ee, #fdbbbb);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #8bdaf4, #f489eb, #f09999);
+  }
+}
+.synopsisText {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.synopsisText > div:last-of-type {
+  margin-left: auto;
+}
+
+.movie__links {
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.movie__heading {
+  font-size: 2.2rem;
+}
+
+.movie__Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bold;
+}
+
+.movie__homeButton {
+  background-color: rgb(255, 0, 0);
+}
+
+.movie__imdbButton {
+  background-color: #f3ce13;
+}
+
+.newTab {
+  margin-left: 1.4rem;
+}
+
+.movie__production {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.movie__productionComapany {
+  width: 200px;
+  margin: 2rem;
+}
+
+@media (max-width: 768px) {
+  .movie__links {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .movie__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  .useFull__link {
+    display: flex;
+    gap: 0.8rem;
+    /* flex-wrap: wrap; */
+  }
+
+  .movie__Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    /* width: 150px; */
+    color: black;
+    font-weight: bold;
+  }
+  .newTab {
+    margin-left: 1.4rem;
+  }
+}
+@media (max-width: 360px) {
+  .movie__Button {
+    padding: 0.5rem 2rem;
+  }
+  .useFull__link {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.productionCompanyImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .movie__heading2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .movie__heading__conatiner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .movie__production {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+  .movie__productionComapany {
+    width: 0px;
+    margin: 0.2rem;
+  }
+  .campany__name {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .campany__name > span {
+    z-index: 1;
+  }
+}

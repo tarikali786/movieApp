@@ -1,0 +1,108 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* width: 100%; */
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  background-color: rgb(115, 195, 242);
+  padding: 0.4rem 2.5rem;
+}
+
+a > span {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+a > span:hover {
+  color: red;
+}
+
+.headerIcon {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  background-size: cover;
+}
+.user__avatar {
+  font-size: 2rem;
+}
+
+.menu__container {
+  text-align: right;
+  padding: 0 2px;
+}
+.menu__icon {
+  background-color: rgb(115, 195, 242);
+  color: white;
+  border: none;
+}
+
+.menu__title {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(115, 195, 242);
+}
+.menu__right {
+  padding: 0.2rem 0.5rem;
+}
+.menu__right .headerIcon2 {
+  width: 72px;
+  height: 36px;
+  cursor: pointer;
+  background-size: cover;
+}
+.navbar__title {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0rem;
+  z-index: 100;
+  background-color: #000000;
+  animation: menuBar 0.3s ease-out;
+  align-items: flex-start;
+  padding: 0 1.2rem;
+  width: 6.2rem;
+}
+
+@keyframes menuBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 6.2rem;
+  }
+}
+
+.close__menu__bar {
+  margin: 0.4rem 0rem 1rem 5rem;
+}
+.close__menu__bar img {
+  z-index: 100;
+}
+
+.icon__bar {
+  font-size: 1.2rem;
+}

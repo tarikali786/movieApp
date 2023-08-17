@@ -1,0 +1,12 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.list__title {
+  margin: 0 0 0.6rem 2rem;
+}
